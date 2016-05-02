@@ -275,7 +275,7 @@ execution. This is what the stack looks like at the time printf() is called:
 ```
 
 Note that the addresses are probably all junk, I think I cobbled that together
-from multiple executions. It's more the offset I care about
+from multiple executions. It's more the offset I care about.
 
 To work out the offset I can count the dots that get printed each time it gets
 called:
@@ -362,7 +362,7 @@ def format_string_exploit(r):
 
 
 def send_flag(r, flag):
-    """Get the dots and send the format string exploit."""
+    """Send the flag and check the response."""
     r.recvline()    # Loading game
     r.recvline()    # Dots
     r.recvline()    # Bet you don't know the flag
